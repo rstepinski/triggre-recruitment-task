@@ -1,0 +1,54 @@
+#devtools > .info > .info-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: monospace;
+    padding: 5px;
+    font-size: 12px;
+}
+
+#devtools > .info > .info-block > div {
+    white-space: nowrap;
+}
+
+#devtools > .info > .info-block .actions {
+    display: none;
+}
+
+#devtools > .info > .info-block:hover .actions {
+    display: flex;
+    gap: 5px;
+}
+
+#devtools .actions button {
+    font-family: monospace;
+}
+
+#devtools > .info > .info-block .info-value {
+    display: inline;
+    font-style: italic;
+}
+
+.info-value[data-state='instantiated'] {
+    color: #0bf;
+}
+
+.info-value[data-state='initialized'] {
+    color: #080;
+}
+
+.info-value[data-state='done'] {
+    font-weight: bold;
+    color: #080;
+}
+
+.info-value[data-state='undefined'] {
+    font-weight: bold;
+    color: #999;
+}
+
+#devtools > .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

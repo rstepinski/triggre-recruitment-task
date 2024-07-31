@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+#app div, #app {
+  min-width: 150px;
+  min-height: 100px;
+  display: flex;
+  border: 1px solid gray;
+  gap: 10px;
+  padding: 100px 10px 10px 10px;
+  flex-wrap: wrap;
+  background-color: rgba(0,0,0,.05);
+}

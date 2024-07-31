@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dev.css" />
+    <title>LibX test</title>
+  </head>
+  <body>
+    <div id="app">
+      <div data-widget="async/nested"></div>
+      <div data-widget="base">
+        <div data-widget="manual-done"></div>
+        <div>
+          <div data-widget="base"></div>
+          <div></div>
+          <div data-widget="base"></div>
+        </div>
+        <div></div>
+      </div>
+      <div data-widget="base" data-will-fail></div>
+      <div data-widget="async/basic"></div>
+      <div data-widget="content/nested"></div>
+    </div>
+    <script type="module" src="./dev.js"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
