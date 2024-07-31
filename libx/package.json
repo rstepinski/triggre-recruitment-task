@@ -1,0 +1,26 @@
+{
+  "name": "libx",
+  "version": "1.0.0",
+  "description": "Triggre X library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/lib/index.ts --dts --format esm",
+    "test": "jest --silent",
+    "coverage": "npm run test -- --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.32.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.5.12",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.2.3",
+    "tsup": "^8.2.3",
+    "typescript": "^5.5.4"
+  }
+}

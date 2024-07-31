@@ -1,0 +1,16 @@
+ {
+    "compilerOptions": {
+      "noImplicitAny": true,
+      "outDir": "build/types",
+      "module": "esnext",
+      "target": "es6",
+      "allowJs": true,
+      "sourceMap": true,
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "lib": ["esnext", "dom"],
+      "moduleResolution": "node",
+    },
+    "include": ["src/lib/**/*"],
+    "exclude": ["src/lib/**/tests"],
+}
